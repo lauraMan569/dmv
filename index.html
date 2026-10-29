@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Автосвет, установка BI-LED-модулей, оклейка, тонировка и детейлинг. DMV.">
+  <title>DMV AUTO — автосвет, оклейка и детейлинг</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="DMV — главная">
+      <img class="brand-logo" src="images/DMV%20лого.svg" alt="DMV" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="brand-fallback">DMV</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#directions">Направления</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#booking">Форма записи</a>
+      <a href="#works">Галерея работ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-cta" href="#booking">Записаться <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content wrap">
+        <div class="hero-text">
+          <p class="hero-kicker">АВТОСВЕТ · ЗАЩИТА · УХОД</p>
+          <h1>Два направления.<br><span>Один подход к деталям.</span></h1>
+          <div class="hero-directions">
+            <a class="hero-direction" href="#light"><span class="direction-number">01</span><span><b>Автосвет</b><small>Модули, ПТФ и подключение</small></span><i>↗</i></a>
+            <a class="hero-direction" href="#detailing"><span class="direction-number">02</span><span><b>Оклейка и детейлинг</b><small>Защита кузова, тонировка и уход</small></span><i>↗</i></a>
+          </div>
+          
+        </div>
+        <div class="hero-logo-wrap">
+          <img class="hero-logo" src="images/DMV%20лого.svg" alt="Логотип DMV AUTO" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="hero-logo-fallback">DMV</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Автосвет, оклейка, тонировка, детейлинг">
+      <div class="marquee-track"><span>АВТОСВЕТ</span><b>✳</b><span>ОКЛЕЙКА</span><b>✳</b><span>ТОНИРОВКА</span><b>✳</b><span>ДЕТЕЙЛИНГ</span><b>✳</b><span>АВТОСВЕТ</span><b>✳</b><span>ОКЛЕЙКА</span><b>✳</b><span>ТОНИРОВКА</span><b>✳</b><span>ДЕТЕЙЛИНГ</span><b>✳</b></div>
+    </div>
+
+    <section class="directions section wrap" id="directions">
+      <div class="section-head"><p class="eyebrow">ДВА НАПРАВЛЕНИЯ</p><h2>Что нужно вашему автомобилю?</h2></div>
+      <div class="direction-cards">
+        <article class="direction-card direction-card-light" id="light">
+          <div class="direction-card-top"><span>01 / СВЕТ</span></div>
+          <h3>Автосвет</h3>
+          <p>Установка и подключение световых модулей, BI-LED-оптики и противотуманных фар.</p>
+          <div class="care-tags"><span>BI-LED-модули</span><span>ПТФ</span><span>Дальний свет</span></div>
+          <a class="avito-card direction-avito" href="https://www.avito.ru/brands/i111042516/all/zapchasti_i_aksessuary?ysclid=mvtegxtu1n965932151&sellerId=d1dcfe4b365a9f1c394383cd7510d727" target="_blank" rel="noopener noreferrer"><span class="avito-logo-wrap"><img src="images/Avito_logo.webp" alt="Авито" class="avito-logo avito-logo-image"></span><span class="avito-card-text"><b>Подключение к дальнему свету</b><small>Модули, ПТФ и дальний свет</small></span><i class="avito-arrow" aria-hidden="true">↗</i></a>
+        </article>
+        <article class="direction-card direction-card-care" id="detailing">
+          <div class="direction-card-top"><span>02 / ЗАЩИТА И УХОД</span></div>
+          <h3>Детейлинг</h3>
+          <p>Защита кузова плёнкой, работа со стёклами, уход за лакокрасочным покрытием и салоном.</p>
+          <div class="care-tags"><span>Полировка</span><span>Химчистка</span><span>Шумоизоляция</span><span>Плёнка</span><span>Мойка</span></div>
+          <a class="button button-light" href="#services">Все услуги и цены <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section wrap" id="services">
+      <div class="section-head"><p class="eyebrow">УСЛУГИ И ЦЕНЫ</p><h2>Работы по направлениям.</h2><p class="section-copy">Стоимость отдельных работ зависит от состояния автомобиля и согласуется до начала работ.</p></div>
+      <div class="service-direction-columns">
+        <div class="service-direction-column">
+          <div class="service-direction-heading"><span>НАПРАВЛЕНИЕ 01</span><h3>Автосвет</h3></div>
+          <article class="price-group" id="autolight-prices">
+          <div class="price-group-heading"><span class="group-icon">◉</span><div><p class="eyebrow">СВЕТОВЫЕ РЕШЕНИЯ</p><h3>Автосвет</h3></div></div>
+          <div class="price-list">
+            <div class="price-row"><div><b>Установка ПТФ</b></div><strong>3 000 ₽</strong></div>
+            <div class="price-row"><div><b>Подключение к дальнему свету</b></div><strong>1 500 ₽</strong></div>
+            <div class="price-row"><div><b>Установка BI-LED-модулей</b></div><strong>от 18 000 ₽</strong></div>
+          </div>
+          <a class="avito-card service-avito" href="https://www.avito.ru/brands/i111042516/all/zapchasti_i_aksessuary?ysclid=mvtegxtu1n965932151&sellerId=d1dcfe4b365a9f1c394383cd7510d727" target="_blank" rel="noopener noreferrer"><span class="avito-logo-wrap"><img src="images/Avito_logo.webp" alt="Авито" class="avito-logo avito-logo-image"></span><span class="avito-card-text"><b>Подключение к дальнему свету</b><small>Модули, ПТФ и дальний свет</small></span><i class="avito-arrow" aria-hidden="true">↗</i></a>
+        </article>
+        </div>
+        <div class="service-direction-column">
+          <div class="service-direction-heading"><span>НАПРАВЛЕНИЕ 02</span><h3>Детейлинг</h3></div>
+          <article class="price-group" id="detailing-prices">
+          <div class="price-group-heading"><span class="group-icon">✳</span><div><p class="eyebrow">УХОД ЗА АВТОМОБИЛЕМ</p><h3>Детейлинг</h3></div></div>
+          <div class="price-list">
+            <div class="price-row"><div><b>Полировка кузова</b><small>Цена зависит от цвета и степени затёртости; тёмные цвета дороже.</small></div><strong>от 19 000 ₽</strong></div>
+            <div class="price-row"><div><b>Покрытие твёрдым воском</b></div><strong>9 000 ₽</strong></div>
+            <div class="price-row"><div><b>Покрытие керамикой, 1 слой</b></div><strong>20 000 ₽</strong></div>
+            <div class="price-row"><div><b>Химчистка салона</b><small>Цена зависит от цвета салона и степени загрязнения; светлые салоны дороже.</small></div><strong>от 18 000 ₽</strong></div>
+            <div class="price-row"><div><b>Мойка техническая</b></div><strong>800 ₽</strong></div>
+            <div class="price-row"><div><b>Мойка двухфазная</b></div><strong>1 900 ₽</strong></div>
+            <div class="price-row"><div><b>Мойка двухфазная с уборкой</b></div><strong>3 000 ₽</strong></div>
+            <div class="price-row"><div><b>Мойка трёхфазная</b></div><strong>2 800 ₽</strong></div>
+            <div class="price-row"><div><b>Мойка трёхфазная с уборкой</b></div><strong>3 900 ₽</strong></div>
+            <div class="price-row"><div><b>Химчистка кузова</b><small>Включает двухфазную мойку.</small></div><strong>4 300 ₽</strong></div>
+            <div class="price-row"><div><b>Детейлинг-уборка</b></div><strong>4 500 ₽</strong></div>
+          </div>
+          <div class="inspection-note"><b>Локальные работы — по договорной цене</b><p>Например, удаление пятна на тканевом сиденье или локальная полировка царапины на ЛКП. Стоимость озвучивается только после осмотра автомобиля.</p></div>
+        </article>
+          <article class="price-group" id="soundproofing">
+          <div class="price-group-heading"><span class="group-icon">〰</span><div><p class="eyebrow">КОМФОРТ В САЛОНЕ</p><h3>Шумоизоляция</h3></div></div>
+          <div class="price-list">
+            <div class="price-row"><div><b>Одна дверь</b></div><strong>8 500 ₽</strong></div>
+            <div class="price-row"><div><b>Пол</b></div><strong>35 000 ₽</strong></div>
+            <div class="price-row"><div><b>Багажник</b></div><strong>8 000 ₽</strong></div>
+            <div class="price-row"><div><b>Арки передних колёс</b></div><strong>15 000 ₽</strong></div>
+            <div class="price-row"><div><b>Арки задних колёс</b></div><strong>20 000 ₽</strong></div>
+          </div>
+        </article>
+          <article class="price-group" id="wrapping">
+          <div class="price-group-heading"><span class="group-icon">▱</span><div><p class="eyebrow">ЗАЩИТА КУЗОВА</p><h3>Оклейка плёнкой</h3></div></div>
+          <div class="package-list">
+            <div class="package-card"><div class="package-top"><h4>Комплекс «Минимум»</h4><strong>45 000 ₽</strong></div><p>Капот, фары, стойки лобового стекла, зона под ручками, полоса на крышу.</p></div>
+            <div class="package-card"><div class="package-top"><h4>Комплекс «Стандарт»</h4><strong>65 000 ₽</strong></div><p>Капот, фары, стойки лобового стекла, зона под ручками, полоса на крышу, зеркала заднего вида, внутренние пороги и зона погрузки при наличии.</p></div>
+            <div class="package-card"><div class="package-top"><h4>Комплекс «Расширенный»</h4><strong>125 000 ₽</strong></div><p>Всё из комплекса «Стандарт», а также передний бампер, передние крылья и зоны пескоструя.</p></div>
+          </div>
+          <p class="price-footnote">Оклейка всего кузова автомобиля рассчитывается индивидуально.</p>
+        </article>
+          <article class="price-group" id="tinting">
+          <div class="price-group-heading"><span class="group-icon">◐</span><div><p class="eyebrow">ПЛЁНКИ ДЛЯ СТЁКОЛ</p><h3>Тонировка</h3></div></div>
+          <div class="price-subhead">Плёнка SunControl</div>
+          <div class="price-list">
+            <div class="price-row"><div><b>Задний полукруг</b></div><strong>9 000 ₽</strong></div>
+            <div class="price-row"><div><b>Боковые стёкла</b></div><strong>4 200 ₽</strong></div>
+            <div class="price-row"><div><b>Лобовое стекло</b></div><strong>5 200 ₽</strong></div>
+          </div>
+          <div class="price-subhead">Атермальная плёнка</div>
+          <div class="price-list">
+            <div class="price-row"><div><b>Боковые стёкла</b></div><strong>7 000 ₽</strong></div>
+            <div class="price-row"><div><b>Лобовое стекло</b></div><strong>10 000 ₽</strong></div>
+            <div class="price-row"><div><b>Полукруг</b></div><strong>17 000 ₽</strong></div>
+          </div>
+        </article>
+        </div>
+      </div>
+      <p class="note">* Перечень и стоимость услуг необходимо сверить с актуальным прайс-листом студии перед публикацией.</p>
+    </section>
+
+    <section class="booking-section section wrap" id="booking" aria-labelledby="booking-title">
+      <div class="booking-layout">
+        <div class="booking-intro">
+          <p class="eyebrow">ФОРМА ЗАПИСИ</p>
+          <h2 id="booking-title">Выберите направление и расскажите о задаче.</h2>
+          <p class="section-copy">Выберите дату, время и нужные услуги. Оставьте контакты, чтобы согласовать запись.</p>
+        </div>
+        <div class="booking-panel" aria-labelledby="booking-title">
+          <form id="bookingForm" class="booking-form">
+            <div class="booking-form-main">
+              <div class="booking-fields">
+                <div class="booking-datetime">
+                  <div class="booking-date-block">
+                    <span class="booking-field-title" id="bookingDateLabel">Дата</span>
+                    <div class="booking-calendar" id="bookingCalendar" aria-labelledby="bookingDateLabel">
+                      <div class="booking-calendar-header">
+                        <button type="button" class="calendar-month-button" data-calendar-prev aria-label="Предыдущий месяц">‹</button>
+                        <h3 id="bookingCalendarTitle" aria-live="polite"></h3>
+                        <button type="button" class="calendar-month-button" data-calendar-next aria-label="Следующий месяц">›</button>
+                      </div>
+                      <div class="booking-calendar-weekdays" aria-hidden="true">
+                        <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+                      </div>
+                      <div class="booking-calendar-days" id="bookingCalendarDays" role="group" aria-label="Выберите день"></div>
+                      <p class="booking-selected-date" id="bookingSelectedDate" aria-live="polite">Выберите дату</p>
+                    </div>
+                    <input id="bookingDate" type="hidden" name="date">
+                  </div>
+                  <div class="booking-time-block">
+                    <span class="booking-field-title" id="bookingTimeLabel">Время записи</span>
+                    <p class="booking-time-hint">Шаг записи — 1 час</p>
+                    <div class="booking-time-slots" id="bookingTimeSlots" role="group" aria-labelledby="bookingTimeLabel"></div>
+                    <input id="bookingTime" type="hidden" name="time">
+                  </div>
+                </div>
+                <div class="booking-contact-fields">
+                  <label for="bookingName">Имя
+                    <input id="bookingName" type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+                  </label>
+                  <label for="bookingPhone">Телефон
+                    <input id="bookingPhone" type="tel" name="phone" placeholder="+7 ___ ___-__-__" autocomplete="tel" inputmode="tel" required>
+                  </label>
+                </div>
+              </div>
+
+              <fieldset class="service-picker">
+                <legend>Услуги</legend>
+                <div class="service-options">
+                  <details class="service-accordion">
+                    <summary>АВТОСВЕТ</summary>
+                    <div class="service-accordion-options">
+                      <label><input type="checkbox" name="services" value="Установка ПТФ"><span>Установка ПТФ</span></label>
+                      <label><input type="checkbox" name="services" value="Подключение к дальнему свету"><span>Подключение к дальнему свету</span></label>
+                      <label><input type="checkbox" name="services" value="Установка BI-LED-модулей"><span>Установка BI-LED-модулей</span></label>
+                    </div>
+                  </details>
+                  <details class="service-accordion">
+                    <summary>ДЕТЕЙЛИНГ И МОЙКА</summary>
+                    <div class="service-accordion-options">
+                      <label><input type="checkbox" name="services" value="Полировка кузова"><span>Полировка кузова</span></label>
+                      <label><input type="checkbox" name="services" value="Покрытие твёрдым воском"><span>Покрытие твёрдым воском</span></label>
+                      <label><input type="checkbox" name="services" value="Покрытие керамикой"><span>Покрытие керамикой</span></label>
+                      <label><input type="checkbox" name="services" value="Химчистка салона"><span>Химчистка салона</span></label>
+                      <label><input type="checkbox" name="services" value="Техническая мойка"><span>Мойка техническая</span></label>
+                      <label><input type="checkbox" name="services" value="Двухфазная мойка"><span>Мойка двухфазная</span></label>
+                      <label><input type="checkbox" name="services" value="Двухфазная мойка с уборкой"><span>Двухфазная мойка с уборкой</span></label>
+                      <label><input type="checkbox" name="services" value="Трёхфазная мойка"><span>Мойка трёхфазная</span></label>
+                      <label><input type="checkbox" name="services" value="Трёхфазная мойка с уборкой"><span>Мойка трёхфазная с уборкой</span></label>
+                      <label><input type="checkbox" name="services" value="Химчистка кузова"><span>Химчистка кузова</span></label>
+                      <label><input type="checkbox" name="services" value="Детейлинг-уборка"><span>Детейлинг-уборка</span></label>
+                    </div>
+                  </details>
+                  <details class="service-accordion">
+                    <summary>ДРУГИЕ РАБОТЫ</summary>
+                    <div class="service-accordion-options">
+                      <label><input type="checkbox" name="services" value="Шумоизоляция двери"><span>Шумоизоляция двери</span></label>
+                      <label><input type="checkbox" name="services" value="Шумоизоляция пола"><span>Шумоизоляция пола</span></label>
+                      <label><input type="checkbox" name="services" value="Шумоизоляция багажника"><span>Шумоизоляция багажника</span></label>
+                      <label><input type="checkbox" name="services" value="Шумоизоляция арок"><span>Шумоизоляция арок</span></label>
+                      <label><input type="checkbox" name="services" value="Оклейка плёнкой — Минимум"><span>Оклейка плёнкой — «Минимум»</span></label>
+                      <label><input type="checkbox" name="services" value="Оклейка плёнкой — Стандарт"><span>Оклейка плёнкой — «Стандарт»</span></label>
+                      <label><input type="checkbox" name="services" value="Оклейка плёнкой — Расширенный"><span>Оклейка плёнкой — «Расширенный»</span></label>
+                      <label><input type="checkbox" name="services" value="Тонировка SunControl"><span>Тонировка SunControl</span></label>
+                      <label><input type="checkbox" name="services" value="Атермальная тонировка"><span>Атермальная тонировка</span></label>
+                      <label><input type="checkbox" name="services" value="Локальные работы"><span>Локальные работы по договорной цене</span></label>
+                    </div>
+                  </details>
+                </div>
+                <p class="form-hint">Можно выбрать несколько услуг.</p>
+              </fieldset>
+            </div>
+
+            <label class="marketing-consent"><input type="checkbox" name="marketingConsent"><span>Я хочу получать информацию о скидках, акциях и спецпредложениях — <a href="advertising-consent.html">согласие на рекламную рассылку</a>.</span></label>
+            <button class="button button-orange booking-submit" type="submit">Записаться <span>↗</span></button>
+            <p class="legal-consent">Нажимая «Записаться», вы соглашаетесь с <a href="personal-data-consent.html">согласием на обработку персональных данных</a> и <a href="privacy-policy.html">политикой конфиденциальности и обработки персональных данных</a>.</p>
+            <p class="booking-message" id="bookingMessage" role="status" hidden>Демо-форма проверена. Чтобы получать реальные заявки, нужно подключить отправку формы.</p>
+          </form>
+                </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="works">
+      <div class="wrap">
+        
+        <div class="carousel-heading"><h3>Фотографии</h3><div class="carousel-controls"><button type="button" class="carousel-arrow" data-scroll="photos" data-direction="-1" aria-label="Предыдущие фотографии">←</button><button type="button" class="carousel-arrow" data-scroll="photos" data-direction="1" aria-label="Следующие фотографии">→</button></div></div>
+        <div class="media-carousel" id="photosCarousel" data-carousel="photos">
+          <figure class="gallery-card"><button class="gallery-image-button media-open" type="button" data-media-type="image" aria-label="Открыть фотографию: Нива с 208 световыми модулями"><img src="images/niva-208-modules.jpg" alt="Синяя Нива с установленными 208 световыми модулями"></button><figcaption><span>Нива с 208 световыми модулями</span><small>АВТОСВЕТ</small></figcaption></figure>
+          <figure class="gallery-card"><button class="gallery-image-button media-open" type="button" data-media-type="image" aria-label="Открыть фотографию: наша студия"><img src="images/studio-exterior.jpg" alt="Фасад студии DMV Auto с автомобилем у входа"></button><figcaption><span>Наша студия</span><small>СНАРУЖИ</small></figcaption></figure>
+          <figure class="gallery-card"><button class="gallery-image-button media-open" type="button" data-media-type="image" aria-label="Открыть изображение: световые решения"><img src="graphics/car-front.svg" alt="Графическая иллюстрация автомобиля спереди"></button><figcaption><span>Световые решения</span><small>ГРАФИКА</small></figcaption></figure>
+        </div>
+        <div class="carousel-heading video-carousel-heading"><h3>Видео</h3><div class="carousel-controls"><button type="button" class="carousel-arrow" data-scroll="videos" data-direction="-1" aria-label="Предыдущее видео">←</button><button type="button" class="carousel-arrow" data-scroll="videos" data-direction="1" aria-label="Следующее видео">→</button></div></div>
+        <div class="media-carousel video-carousel" id="videosCarousel" data-carousel="videos">
+          <figure class="gallery-card video-card video-studio" data-video-card>
+            <video controls playsinline preload="metadata" poster="images/studio-exterior.jpg" aria-label="Видео: открываем студию">
+              <source src="media/studio-opening.mp4" type="video/mp4">
+            </video>
+            <button class="video-open-overlay media-open" type="button" data-media-type="video" aria-label="Открыть видео в полноэкранном просмотре">Открыть видео ↗</button>
+            <figcaption><span>Открываем студию</span><small>ВИДЕО</small></figcaption>
+            <div class="video-missing"><b>Видео появится здесь</b><small>Файл: media/studio-opening.mp4</small></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts section wrap" id="contacts">
+      <div class="section-head"><p class="eyebrow">КОНТАКТЫ</p><h2>Выберите направление<br>и свяжитесь с нами.</h2></div>
+      <div class="contacts-grid">
+        <article class="contact-card"><span class="contact-label">01 / АВТОСВЕТ</span><h3>Автосвет и модули</h3><p>Вопросы по световым модулям, ПТФ и подключению.</p><a class="contact-phone" href="tel:">+7 (___) ___-**-** <span>↗</span></a><small>Здесь будет телефон направления «Автосвет»</small><a class="button button-orange" href="https://www.avito.ru/brands/i111042516/all/zapchasti_i_aksessuary?ysclid=mvtegxtu1n965932151&sellerId=d1dcfe4b365a9f1c394383cd7510d727" target="_blank" rel="noopener noreferrer">Магазин на Авито <span>↗</span></a></article>
+        <article class="contact-card"><span class="contact-label">02 / ДЕТЕЙЛИНГ</span><h3>Оклейка и уход</h3><p>Вопросы по полировке, тонировке, шумоизоляции и оклейке.</p><a class="contact-phone" href="tel:">+7 (___) ___-**-** <span>↗</span></a><small>Здесь будет телефон направления «Оклейка и детейлинг»</small><a class="button button-light" href="#services">Посмотреть услуги <span>↗</span></a></article>
+      </div>
+      <div class="contacts-bottom-grid">
+        <div class="studio-panel"><figure class="studio-photo-panel"><img src="images/studio-exterior.jpg" alt="Фасад студии DMV Auto с автомобилем у входа"><figcaption><h3>Наша студия</h3></figcaption></figure></div>
+        <div class="map-panel">
+          <div class="map-heading"><div><p class="eyebrow">МЫ НА КАРТЕ</p><h3>Как нас найти</h3></div></div>
+          <div class="map-embed" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/dmv_auto/87759582932/?utm_medium=mapframe&amp;utm_source=maps" target="_blank" rel="noopener noreferrer" class="map-attribution">DMV Auto</a>
+            <a href="https://yandex.ru/maps/47/nizhny-novgorod/category/auto_light/41074163667/?utm_medium=mapframe&amp;utm_source=maps" target="_blank" rel="noopener noreferrer" class="map-attribution map-attribution-second">Автосвет в Нижнем Новгороде</a>
+            <a href="https://yandex.ru/maps/47/nizhny-novgorod/category/car_wrapping/184074231588/?utm_medium=mapframe&amp;utm_source=maps" target="_blank" rel="noopener noreferrer" class="map-attribution map-attribution-third">Оклейка машин в Нижнем Новгороде</a>
+            <iframe title="DMV Auto на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=43.977303%2C56.291783&amp;mode=search&amp;oid=87759582932&amp;ol=biz&amp;z=14.74" width="560" height="400" frameborder="1" allowfullscreen="true" loading="lazy" style="position:relative;"></iframe>
+          </div>
+          <p class="map-caption">Нажмите на карту, чтобы построить маршрут.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото и видео" hidden>
+    <button class="lightbox-close" type="button" aria-label="Закрыть просмотр">×</button>
+    <button class="lightbox-backdrop" type="button" aria-label="Закрыть просмотр"></button>
+    <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Предыдущий материал">‹</button>
+    <img class="lightbox-image" src="" alt="">
+    <video class="lightbox-video" controls playsinline preload="metadata" hidden></video>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="Следующий материал">›</button>
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-main"><a class="brand footer-brand" href="#top" aria-label="DMV — главная"><img class="brand-logo" src="images/DMV%20лого.svg" alt="DMV"><span class="brand-fallback">DMV</span></a><div class="footer-links"><a href="#directions">Направления</a><a href="#services">Услуги и цены</a><a href="#booking">Форма записи</a><a href="#works">Галерея работ</a><a href="#contacts">Контакты</a></div><a class="footer-top" href="#top"><span aria-hidden="true">↑</span> Наверх</a></div>
+    <div class="wrap footer-bottom"><span>© DMV</span><div class="footer-legal"><a href="privacy-policy.html">Политика конфиденциальности</a><a href="personal-data-consent.html">Согласие на обработку ПД</a><a href="advertising-consent.html">Согласие на рекламную рассылку</a></div></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
