@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="car-scene.css">
 </head>
 <body>
   <header class="header">
@@ -48,9 +49,27 @@
       </div>
     </section>
 
-    <div class="marquee" aria-label="Автосвет, оклейка, тонировка, детейлинг">
-      <div class="marquee-track"><span>АВТОСВЕТ</span><b>✳</b><span>ОКЛЕЙКА</span><b>✳</b><span>ТОНИРОВКА</span><b>✳</b><span>ДЕТЕЙЛИНГ</span><b>✳</b><span>АВТОСВЕТ</span><b>✳</b><span>ОКЛЕЙКА</span><b>✳</b><span>ТОНИРОВКА</span><b>✳</b><span>ДЕТЕЙЛИНГ</span><b>✳</b></div>
-    </div>
+    <section class="car-scene" aria-label="Автомобиль DMV проезжает по дороге и демонстрирует свет фар">
+      <div class="car-scene-fog" aria-hidden="true"></div>
+      <div class="car-scene-road" aria-hidden="true"></div>
+      <div class="car-scene-stage" aria-hidden="true">
+        <div class="car-scene-motion">
+          <div class="car-scene-rotator">
+            <div class="car-scene-ground-glow"></div>
+            <div class="car-scene-side-beam"></div>
+            <div class="car-scene-body"></div>
+            <div class="car-scene-wheel car-scene-wheel-rear"></div>
+            <div class="car-scene-wheel car-scene-wheel-front"></div>
+            <div class="car-scene-front">
+              <div class="car-scene-windshield"></div>
+              <div class="car-scene-matrix" data-car-matrix></div>
+              <div class="car-scene-lightbar"></div>
+              <div class="car-scene-flare"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="directions section wrap" id="directions">
       <div class="section-head"><p class="eyebrow">ДВА НАПРАВЛЕНИЯ</p><h2>Что нужно вашему автомобилю?</h2></div>
@@ -308,5 +327,6 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script src="car-scene.js" defer></script>
 </body>
 </html>
