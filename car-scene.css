@@ -1,0 +1,253 @@
+/* DMV AUTO — анимированная сцена автомобиля */
+.car-scene {
+  position: relative;
+  isolation: isolate;
+  height: clamp(230px, 27vw, 330px);
+  margin: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 75%, rgba(30, 65, 125, .24), transparent 58%),
+    linear-gradient(180deg, #080a10 0%, #101522 72%, #0b0d12 100%);
+  perspective: 1100px;
+}
+.car-scene::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 32% 0;
+  background: radial-gradient(ellipse at 50% 100%, rgba(65, 100, 170, .16), transparent 65%);
+  pointer-events: none;
+}
+.car-scene-fog {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 72px;
+  left: 0;
+  height: 90px;
+  background: linear-gradient(0deg, rgba(30, 48, 78, .24), transparent);
+  pointer-events: none;
+}
+.car-scene-road {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 76px;
+  border-top: 2px solid rgba(130, 151, 190, .22);
+  background: linear-gradient(180deg, #171a22, #0c0e13);
+  box-shadow: inset 0 12px 24px rgba(0,0,0,.55);
+}
+.car-scene-road::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  opacity: .65;
+  background: repeating-linear-gradient(90deg, #9aa9c3 0 38px, transparent 38px 78px);
+}
+.car-scene-stage {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 52px;
+  left: 0;
+  height: 190px;
+  pointer-events: none;
+}
+.car-scene-motion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 290px;
+  height: 160px;
+  transform-style: preserve-3d;
+  animation: dmvDrive 12s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+.car-scene-rotator {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: dmvTurn 12s ease-in-out infinite;
+}
+.car-scene-body {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  width: 275px;
+  height: 119px;
+  border: 1px solid rgba(147, 181, 255, .65);
+  border-radius: 12px 17px 5px 5px;
+  background: linear-gradient(180deg, #315fae 0%, #173b7d 68%, #0a1e43 100%);
+  clip-path: polygon(0 51%, 19% 51%, 31% 9%, 74% 9%, 87% 47%, 100% 51%, 100% 91%, 0 91%);
+  box-shadow: inset 0 5px 15px rgba(255,255,255,.2), 0 12px 24px rgba(0,0,0,.5);
+}
+.car-scene-body::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 72px;
+  width: 145px;
+  height: 42px;
+  background: linear-gradient(130deg, #101a2c, #05080e);
+  border: 2px solid rgba(130, 166, 235, .45);
+  clip-path: polygon(18% 0, 90% 0, 100% 100%, 0 100%);
+}
+.car-scene-body::after {
+  content: "DMV";
+  position: absolute;
+  bottom: 27px;
+  left: 112px;
+  color: rgba(255,255,255,.88);
+  font: 800 17px/1 Manrope, sans-serif;
+  letter-spacing: 3px;
+  transform: skewX(-13deg);
+}
+.car-scene-wheel {
+  position: absolute;
+  z-index: 4;
+  bottom: 5px;
+  width: 49px;
+  height: 49px;
+  border: 5px solid #252a34;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8a929e 0 13%, #343a45 15% 35%, #080a0e 38% 100%);
+  box-shadow: 0 4px 9px rgba(0,0,0,.85);
+}
+.car-scene-wheel::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 2px solid #8792a4;
+  border-radius: 50%;
+  animation: dmvWheelSpin .8s linear infinite;
+}
+.car-scene-wheel-rear { left: 29px; }
+.car-scene-wheel-front { right: 25px; }
+.car-scene-front {
+  position: absolute;
+  right: -65px;
+  bottom: 17px;
+  display: flex;
+  width: 130px;
+  height: 112px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+  border: 1px solid rgba(147,181,255,.55);
+  border-radius: 7px;
+  background: linear-gradient(180deg, #214a91, #0b2452);
+  box-shadow: 0 0 18px rgba(0,0,0,.8);
+  transform: rotateY(90deg);
+  transform-style: preserve-3d;
+}
+.car-scene-windshield {
+  width: 110px;
+  height: 31px;
+  margin-bottom: 5px;
+  border: 2px solid #152e59;
+  border-radius: 4px;
+  background: #080d18;
+}
+.car-scene-matrix {
+  display: grid;
+  width: 116px;
+  height: 43px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 1px;
+  padding: 2px;
+  border: 3px solid #333b49;
+  background: #080a0f;
+  box-shadow: inset 0 0 8px #000;
+}
+.car-scene-lens {
+  border-radius: 2px;
+  background: radial-gradient(circle, #fff 15%, #b9d7ff 52%, #243c62 100%);
+  box-shadow: 0 0 3px rgba(220,239,255,.8);
+}
+.car-scene-lightbar {
+  width: 108px;
+  height: 5px;
+  margin-top: 4px;
+  border-radius: 3px;
+  background: #e8f4ff;
+  box-shadow: 0 0 9px #b6d8ff;
+}
+.car-scene-side-beam {
+  position: absolute;
+  right: -220px;
+  bottom: 24px;
+  width: 235px;
+  height: 88px;
+  background: linear-gradient(90deg, rgba(174,211,255,.48), transparent);
+  clip-path: polygon(0 35%,100% 0,100% 100%,0 75%);
+  animation: dmvSideBeam 12s infinite;
+}
+.car-scene-flare {
+  position: absolute;
+  z-index: 5;
+  top: -75px;
+  left: -150px;
+  width: 430px;
+  height: 300px;
+  opacity: 0;
+  background: radial-gradient(ellipse, rgba(255,255,255,.98) 0%, rgba(170,215,255,.75) 24%, rgba(65,145,255,.22) 52%, transparent 74%);
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 28px rgba(185,220,255,.8));
+  animation: dmvHeadlightFlash 12s ease-in-out infinite;
+}
+.car-scene-ground-glow {
+  position: absolute;
+  bottom: -5px;
+  left: 25px;
+  width: 240px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(80,145,255,.34), transparent 72%);
+}
+@keyframes dmvDrive {
+  0% { transform: translateX(-330px); }
+  34% { transform: translateX(calc(50vw - 145px)); }
+  64% { transform: translateX(calc(50vw - 145px)); }
+  100% { transform: translateX(calc(100vw + 330px)); }
+}
+@keyframes dmvTurn {
+  0%, 35% { transform: rotateY(0); }
+  43%, 58% { transform: rotateY(-80deg); }
+  66%, 100% { transform: rotateY(0); }
+}
+@keyframes dmvSideBeam {
+  0%, 35%, 67%, 100% { opacity: .75; }
+  42%, 62% { opacity: .04; }
+}
+@keyframes dmvHeadlightFlash {
+  0%, 41%, 63%, 100% { opacity: 0; transform: scale(.65); }
+  46% { opacity: 1; transform: scale(1.25); }
+  52% { opacity: .9; transform: scale(1.12); }
+  58% { opacity: 1; transform: scale(1.35); }
+}
+@keyframes dmvWheelSpin { to { transform: rotate(360deg); } }
+@media (max-width: 600px) {
+  .car-scene { height: 220px; }
+  .car-scene-stage { bottom: 48px; height: 150px; }
+  .car-scene-motion { transform-origin: left bottom; scale: .72; animation-name: dmvDriveMobile; }
+  .car-scene-road { height: 64px; }
+  .car-scene-road::after { top: 29px; }
+  @keyframes dmvDriveMobile {
+    0% { transform: translateX(-245px); }
+    34% { transform: translateX(calc(50vw - 105px)); }
+    64% { transform: translateX(calc(50vw - 105px)); }
+    100% { transform: translateX(calc(100vw + 245px)); }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .car-scene-motion, .car-scene-rotator, .car-scene-wheel::after,
+  .car-scene-side-beam, .car-scene-flare { animation: none !important; }
+  .car-scene-motion { left: 50%; transform: translateX(-50%); }
+  .car-scene-rotator { transform: rotateY(-80deg); }
+}
