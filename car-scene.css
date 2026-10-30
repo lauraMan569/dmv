@@ -1,84 +1,61 @@
 .divider {
   position: relative;
   width: 100%;
-  height: 112px;
+  height: 80px;
+  background: #0d0d0d;
   overflow: hidden;
-  background: #071a32;
-  isolation: isolate;
 }
 
-.road-top {
+.road-edge-top {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2a2a2a;
+}
+
+.road-surface {
   position: absolute;
   top: 21px;
   left: 0;
-  width: 100%;
-  height: 2px;
-  background: #245b91;
+  right: 0;
+  height: 37px;
+  background: #111;
 }
 
-.road {
+.road-dashes {
   position: absolute;
+  top: 18px;
   left: 0;
   right: 0;
-  top: 23px;
-  height: 67px;
-  background: #12345a;
-  border-top: 2px solid #28649b;
-  border-bottom: 2px solid #28649b;
-}
-
-.road:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 32px;
-  height: 2px;
-  background: repeating-linear-gradient(90deg, #a9c9e8 0 34px, transparent 34px 68px);
-  opacity: .8;
-  animation: roadMove .75s linear infinite;
-}
-
-.road-solid {
-  position: absolute;
-  bottom: 19px;
-  left: 0;
-  width: 100%;
   height: 1px;
-  background: #28649b;
+  background: repeating-linear-gradient(
+    90deg,
+    #383838 0 30px,
+    transparent 30px 60px
+  );
 }
 
-.runner {
+.road-edge-bottom {
   position: absolute;
-  z-index: 2;
-  top: 38px;
+  top: 58px;
   left: 0;
-  width: 76px;
-  height: 34px;
-  animation: runnerDrive 13s linear infinite;
-  filter: none;
+  right: 0;
+  height: 1px;
+  background: #2a2a2a;
 }
 
-.runner svg {
-  display: block;
-  width: 76px;
-  height: 34px;
-  overflow: visible;
+.car {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 5;
+  animation: drive 10s linear infinite;
+  will-change: transform;
 }
 
-@keyframes roadMove {
-  to { background-position: -62px 0; }
-}
-
-@keyframes runnerDrive {
-  0% { transform: translateX(-82px); }
-  100% { transform: translateX(calc(100vw + 82px)); }
-}
-
-@media (max-width: 600px) {
-  .divider { height: 96px; }
-  .road { top: 20px; height: 58px; }
-  .road:before { top: 28px; }
-  .runner { top: 32px; animation-duration: 11s; }
-  .road-solid { bottom: 17px; }
+@keyframes drive {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(calc(100vw + 100px)); }
 }
