@@ -4,13 +4,12 @@
 .niva-road-marking{position:absolute;top:50%;width:100%;height:3px;background:repeating-linear-gradient(90deg,#d4a017 0,#d4a017 40px,transparent 40px,transparent 85px);opacity:.6}
 .niva-motion{position:absolute;bottom:48px;left:0;width:220px;height:100px;animation:nivaDriveSmooth 18s linear infinite}
 .niva-chassis{position:relative;width:100%;height:100%;animation:nivaSuspensionVibe .4s ease-in-out infinite alternate}
-.niva-svg{position:absolute;left:0;top:0;width:220px;height:100px;overflow:visible;filter:drop-shadow(0 8px 6px rgba(0,0,0,.7))}
-.niva-beam-high{position:absolute;z-index:0;left:192px;top:24px;width:303px;height:65px;background:linear-gradient(90deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.5) 25%,rgba(255,255,255,.18) 60%,transparent 100%);clip-path:polygon(0 32%,100% 0,100% 100%,0 72%);pointer-events:none}
-.niva-beam-core{position:absolute;z-index:1;left:188px;top:30px;width:45px;height:35px;background:radial-gradient(ellipse at center,#fff 0%,rgba(255,255,255,.7) 45%,transparent 75%);mix-blend-mode:screen;pointer-events:none}
-.niva-ground-light{position:absolute;z-index:0;left:170px;bottom:-8px;width:250px;height:20px;background:radial-gradient(ellipse at center,rgba(255,255,255,.4) 0%,rgba(255,255,255,.12) 50%,transparent 75%);pointer-events:none}
-.niva-wheel{position:absolute;top:142px;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#252830 25%,#121317 60%,#08090a 100%);border:4px solid #1a1c22;box-shadow:inset 0 0 6px #000,0 5px 8px rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center}
-.niva-wheel-back{left:58px}.niva-wheel-front{left:250px}
-.niva-rim{width:42px;height:42px;border-radius:50%;border:2px dashed #cfd4dc;box-shadow:0 0 2px #000;animation:nivaWheelSpin 1.4s linear infinite}
+.niva-svg{position:absolute;z-index:3;left:0;top:0;width:220px;height:100px;overflow:visible;filter:drop-shadow(0 8px 6px rgba(0,0,0,.7))}
+.niva-beam-high{position:absolute;z-index:1;left:191px;top:43px;width:300px;height:48px;background:linear-gradient(90deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.5) 25%,rgba(255,255,255,.18) 60%,transparent 100%);clip-path:polygon(0 32%,100% 0,100% 100%,0 72%);pointer-events:none}
+.niva-beam-core{position:absolute;z-index:2;left:187px;top:43px;width:22px;height:20px;background:radial-gradient(ellipse at center,#fff 0%,rgba(255,255,255,.7) 45%,transparent 75%);mix-blend-mode:screen;pointer-events:none}
+.niva-ground-light{position:absolute;z-index:0;left:185px;bottom:-8px;width:250px;height:20px;background:radial-gradient(ellipse at center,rgba(255,255,255,.4) 0%,rgba(255,255,255,.12) 50%,transparent 75%);pointer-events:none}
+.niva-wheel{transform-box:fill-box;transform-origin:center}
+.niva-rim{animation:nivaWheelSpin 1.4s linear infinite;transform-box:fill-box;transform-origin:center}
 @keyframes nivaDriveSmooth{0%{transform:translateX(-240px)}100%{transform:translateX(calc(100vw + 40px))}}
 @keyframes nivaWheelSpin{to{transform:rotate(360deg)}}
 @keyframes nivaSuspensionVibe{0%{transform:translateY(0)}100%{transform:translateY(-1.2px)}}
