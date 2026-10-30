@@ -63,18 +63,18 @@
   content: "";
   position: absolute;
   z-index: -1;
-  left: 77px;
-  top: 17px;
-  width: 115px;
-  height: 24px;
+  left: 78px;
+  top: 5px;
+  width: 175px;
+  height: 48px;
   background: radial-gradient(
-    ellipse at left center,
-    rgba(37, 99, 235, 0.24) 0%,
-    rgba(37, 99, 235, 0.12) 35%,
-    rgba(37, 99, 235, 0.04) 60%,
-    transparent 78%
+    ellipse at 0% 50%,
+    rgba(37, 99, 235, 0.18) 0%,
+    rgba(37, 99, 235, 0.09) 38%,
+    rgba(37, 99, 235, 0.035) 68%,
+    transparent 100%
   );
-  filter: blur(7px);
+  filter: blur(14px);
   pointer-events: none;
 }
 
