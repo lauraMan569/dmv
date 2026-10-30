@@ -1,43 +1,11 @@
-.divider{position:relative;width:100%;height:112px;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,#101a2c 0%,#070b13 68%,#030509 100%);isolation:isolate}
-.road-top{position:absolute;top:21px;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#263b5a 12%,#263b5a 88%,transparent);box-shadow:0 0 8px rgba(75,150,255,.2)}
-.road{position:absolute;left:0;right:0;top:23px;height:67px;background:linear-gradient(180deg,#111b2b 0%,#080d17 100%);border-top:1px solid #263b59;border-bottom:1px solid #1c2b43;box-shadow:inset 0 8px 22px rgba(0,0,0,.8),0 0 18px rgba(32,100,190,.1)}
-.road:before{content:"";position:absolute;left:0;right:0;top:32px;height:2px;background:repeating-linear-gradient(90deg,#8caed6 0 30px,transparent 30px 62px);opacity:.42;box-shadow:0 0 5px rgba(120,175,240,.25);animation:roadMove .75s linear infinite}
-.road-solid{position:absolute;bottom:19px;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#263b5a 12%,#263b5a 88%,transparent);box-shadow:0 0 7px rgba(75,150,255,.18)}
-.runner{position:absolute;z-index:2;top:38px;left:0;width:76px;height:34px;animation:runnerDrive 13s linear infinite;filter:drop-shadow(0 0 5px rgba(77,160,255,.5))}
+.divider{position:relative;width:100%;height:112px;overflow:hidden;background:#071a32;isolation:isolate}
+.road-top{position:absolute;top:21px;left:0;width:100%;height:2px;background:#245b91;box-shadow:none}
+.road{position:absolute;left:0;right:0;top:23px;height:67px;background:#12345a;border-top:2px solid #28649b;border-bottom:2px solid #28649b;box-shadow:none}
+.road:before{content:"";position:absolute;left:0;right:0;top:32px;height:2px;background:repeating-linear-gradient(90deg,#a9c9e8 0 34px,transparent 34px 68px);opacity:.8;box-shadow:none;animation:none;background-position:0 0}
+.road-solid{position:absolute;bottom:19px;left:0;width:100%;height:1px;background:#28649b;box-shadow:none}
+.runner{position:absolute;z-index:2;top:38px;left:0;width:76px;height:34px;animation:runnerDrive 13s linear infinite;filter:none}
 .runner svg{display:block;width:76px;height:34px;overflow:visible}
-.runner svg path:first-child{filter:drop-shadow(0 0 8px rgba(105,185,255,.95))}
-@keyframes roadMove{to{background-position:-62px 0}}
+.runner svg path:first-child{display:none}
 @keyframes runnerDrive{0%{transform:translateX(-82px)}100%{transform:translateX(calc(100vw + 82px))}}
 @media(max-width:600px){.divider{height:96px}.road{top:20px;height:58px}.road:before{top:28px}.runner{top:32px;animation-duration:11s}.road-solid{bottom:17px}}
-@media(prefers-reduced-motion:reduce){.runner,.road:before{animation:none}.runner{left:calc(50% - 38px)}}
-
-/* Чёткая синяя дорога без свечения */
-.divider {
-  background: #071a32;
-}
-.road-top {
-  background: #245b91;
-  box-shadow: none;
-}
-.road {
-  background: #12345a;
-  border-top: 2px solid #28649b;
-  border-bottom: 2px solid #28649b;
-  box-shadow: none;
-}
-.road:before {
-  background: repeating-linear-gradient(90deg, #a9c9e8 0 34px, transparent 34px 68px);
-  opacity: .8;
-  box-shadow: none;
-  animation: roadMove .75s linear infinite;
-}
-.road-solid {
-  background: #28649b;
-  box-shadow: none;
-}
-.runner {
-  filter: none;
-}
-.runner svg path:first-child {
-  display: none;
-}
+@media(prefers-reduced-motion:reduce){.runner{animation:none;left:calc(50% - 38px)}}
