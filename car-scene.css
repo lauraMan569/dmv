@@ -10,3 +10,34 @@
 @keyframes runnerDrive{0%{transform:translateX(-82px)}100%{transform:translateX(calc(100vw + 82px))}}
 @media(max-width:600px){.divider{height:96px}.road{top:20px;height:58px}.road:before{top:28px}.runner{top:32px;animation-duration:11s}.road-solid{bottom:17px}}
 @media(prefers-reduced-motion:reduce){.runner,.road:before{animation:none}.runner{left:calc(50% - 38px)}}
+
+/* Чёткая синяя дорога без свечения */
+.divider {
+  background: #071a32;
+}
+.road-top {
+  background: #245b91;
+  box-shadow: none;
+}
+.road {
+  background: #12345a;
+  border-top: 2px solid #28649b;
+  border-bottom: 2px solid #28649b;
+  box-shadow: none;
+}
+.road:before {
+  background: repeating-linear-gradient(90deg, #a9c9e8 0 34px, transparent 34px 68px);
+  opacity: .8;
+  box-shadow: none;
+  animation: roadMove .75s linear infinite;
+}
+.road-solid {
+  background: #28649b;
+  box-shadow: none;
+}
+.runner {
+  filter: none;
+}
+.runner svg path:first-child {
+  display: none;
+}
