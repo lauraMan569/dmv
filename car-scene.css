@@ -1,11 +1,11 @@
 .car-scene{position:relative;width:100%;overflow:hidden;isolation:isolate}
-.divider{position:relative;width:100%;height:112px;overflow:hidden;background:#080a0f}
-.road-top{position:absolute;top:22px;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#343b49 12%,#343b49 88%,transparent);opacity:.8}
-.road{position:absolute;left:0;right:0;top:24px;height:66px;background:linear-gradient(180deg,#171a21 0%,#0e1016 100%);border-top:1px solid #282e39;border-bottom:1px solid #252b35;box-shadow:inset 0 8px 18px rgba(0,0,0,.55)}
-.road:before{content:"";position:absolute;left:0;right:0;top:32px;height:2px;background:repeating-linear-gradient(90deg,#b88b26 0 30px,transparent 30px 62px);opacity:.7}
-.road-solid{position:absolute;bottom:19px;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#343b49 12%,#343b49 88%,transparent);opacity:.7}
-.runner{position:absolute;z-index:2;top:34px;left:0;width:80px;height:38px;animation:runnerDrive 13s linear infinite;filter:drop-shadow(0 4px 5px rgba(0,0,0,.7))}
-.runner svg{display:block;width:80px;height:38px;overflow:visible}
-@keyframes runnerDrive{0%{transform:translateX(-90px)}100%{transform:translateX(calc(100vw + 90px))}}
-@media(max-width:600px){.divider{height:96px}.road{top:20px;height:58px}.road:before{top:28px}.runner{top:29px;animation-duration:11s}.road-solid{bottom:17px}}
-@media(prefers-reduced-motion:reduce){.runner{animation:none;left:calc(50% - 40px)}}
+.divider{position:relative;width:100%;height:112px;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#101a30 0%,#05070d 72%,#020307 100%)}
+.road-top{position:absolute;top:22px;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,#26354e 12%,#26354e 88%,transparent);box-shadow:0 0 8px rgba(75,130,220,.18);opacity:.9}
+.road{position:absolute;left:0;right:0;top:24px;height:66px;background:linear-gradient(180deg,#111827 0%,#080c14 100%);border-top:1px solid #26334a;border-bottom:1px solid #1c2940;box-shadow:inset 0 8px 22px rgba(0,0,0,.8),0 0 18px rgba(32,74,140,.08)}
+.road:before{content:"";position:absolute;left:0;right:0;top:32px;height:2px;background:repeating-linear-gradient(90deg,#9c782e 0 30px,transparent 30px 62px);opacity:.55;box-shadow:0 0 5px rgba(214,165,62,.25)}
+.road-solid{position:absolute;bottom:19px;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,#26354e 12%,#26354e 88%,transparent);box-shadow:0 0 7px rgba(75,130,220,.16);opacity:.85}
+.runner{position:absolute;z-index:2;top:43px;left:0;width:40px;height:20px;animation:runnerDrive 13s linear infinite;filter:drop-shadow(0 0 5px rgba(79,140,255,.45))}
+.runner svg{display:block;width:40px;height:20px;overflow:visible}
+@keyframes runnerDrive{0%{transform:translateX(-50px)}100%{transform:translateX(calc(100vw + 50px))}}
+@media(max-width:600px){.divider{height:96px}.road{top:20px;height:58px}.road:before{top:28px}.runner{top:38px;animation-duration:11s}.road-solid{bottom:17px}}
+@media(prefers-reduced-motion:reduce){.runner{animation:none;left:calc(50% - 20px)}}
