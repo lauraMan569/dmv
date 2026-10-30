@@ -1844,7 +1844,7 @@ body.lightbox-open {
 
 .gallery-image-button {
   background: #202020;
-  padding: 12px;
+  padding: 4px;
 }
 
 .gallery-image-button img {
@@ -1948,7 +1948,7 @@ body.lightbox-open {
   }
 
   .gallery-image-button {
-    padding: 8px;
+    padding: 3px;
   }
 
   .lightbox-arrow {
@@ -2139,7 +2139,7 @@ body.lightbox-open {
 
 .media-carousel .gallery-card img {
   object-fit: contain;
-  padding: 12px;
+  padding: 4px;
   background: #202020;
 }
 
