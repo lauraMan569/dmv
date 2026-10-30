@@ -3815,3 +3815,26 @@ body.lightbox-open {
     padding: 18px 18px 52px;
   }
 }
+
+
+/* На мобильных декоративные символы заменены чистой типографикой */
+@media (max-width: 760px) {
+  .button > span,
+  .header-cta > span,
+  .hero-direction > i,
+  .avito-arrow,
+  .contact-phone > span,
+  .footer-top > span,
+  .group-icon {
+    display: none !important;
+  }
+
+  .button,
+  .header-cta {
+    gap: 0;
+  }
+
+  .hero-direction {
+    gap: 12px;
+  }
+}
