@@ -51,7 +51,7 @@
   top: 10px;
   left: 0;
   z-index: 5;
-  animation: drive 10s linear infinite;
+  animation: drive 9s linear infinite;
   will-change: transform;
 }
 
