@@ -65,8 +65,8 @@
   z-index: -1;
   left: 78px;
   top: 5px;
-  width: 125px;
-  height: 34px;
+  width: 62.5px;
+  height: 17px;
   background: radial-gradient(
     ellipse at 0% 50%,
     rgba(255, 255, 255, 0.68) 0%,
@@ -74,7 +74,7 @@
     rgba(255, 255, 255, 0.18) 68%,
     transparent 100%
   );
-  filter: blur(11px);
+  filter: blur(5.5px);
   pointer-events: none;
 }
 
